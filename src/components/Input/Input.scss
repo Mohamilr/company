@@ -42,5 +42,11 @@
             }
         }
     }
+
+    .input__error {
+        color: $red;
+        font-size: rem(10);
+        line-height: rem(5);
+    }
 }
 

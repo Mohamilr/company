@@ -6,11 +6,15 @@ import './Input.scss';
 const Input: FC<InputProps> = ({
   label,
   type,
+  name,
+  id,
+  value,
   placeholder,
   onChange,
   disabled,
   hasIcon,
   icon,
+  formik,
 }) => (
   <div className="input__group">
     <label htmlFor="" className="input__label">
@@ -19,6 +23,9 @@ const Input: FC<InputProps> = ({
     <div className="input__wrapper">
       <input
         type={type}
+        name={name}
+        id={id}
+        value={value}
         className="input"
         placeholder={placeholder}
         onChange={onChange}
@@ -26,6 +33,9 @@ const Input: FC<InputProps> = ({
       />
       {hasIcon && <>{icon ?? <EyeIcon />}</>}
     </div>
+    {formik && formik?.errors[name] && (
+      <span className="input__error">{formik?.errors[name]}</span>
+    )}
   </div>
 );
 

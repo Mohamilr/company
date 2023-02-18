@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { MoneeyIcon } from 'assets/svg';
-import ProductBenefit from 'components/ProductBenefit/ProductBenefit';
-import { ProductsBenefits } from 'components/ProductBenefit/ProductBenefitData';
+import ProductBenefit from 'pages/Login/LoginInfo/ProductBenefit/ProductBenefit';
+import { ProductsBenefits } from 'pages/Login/LoginInfo/ProductBenefit/ProductBenefitData';
 import './LoginInfo.scss';
 
 const LoginInfo: FC = () => (
