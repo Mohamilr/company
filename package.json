@@ -8,21 +8,24 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint src",
-    "lint-fix": "eslint --fix src",
-    "pretty": "prettier --write \"**/*.+(json|md|tsx|ts)\"",
+    "lint-fix": "eslint --fix \"**/*.+(json|tsx|ts)\"",
+    "pretty": "prettier --write \"**/*.+(json|tsx|ts)\"",
     "format": "yarn run pretty && yarn run lint-fix"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.8",
+    "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
     "sass": "^1.58.2",
     "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
-    "@typescript-eslint/eslint-plugin": "2.23.0",
-    "@typescript-eslint/parser": "2.23.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
     "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.34.0",
     "eslint-config-airbnb": "^19.0.4",

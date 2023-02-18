@@ -1,0 +1,11 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/colors";
+
+.profile__container {
+    .profile__wrapper {
+        padding: rem(17) rem(43) 0 rem(60);
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        gap: rem(40);
+    }
+}

@@ -1,0 +1,19 @@
+@import "../../../../assets/scss/mixins";
+@import "../../../../assets/scss/colors";
+
+.profile {
+    .profile__header {
+        font-size: rem(12);
+        line-height: rem(19);
+        color: $gray__text__color__b;
+        text-transform: uppercase;
+    }
+
+    .profile__content {
+        font-size: rem(16);
+        line-height: rem(25);
+        letter-spacing: rem(-0.3);
+        color: $black__text__color;
+        text-transform: uppercase;
+    }
+}

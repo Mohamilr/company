@@ -1,0 +1,22 @@
+@import "../../../../assets/scss/mixins";
+@import "../../../../assets/scss/colors";
+
+.profile__header {
+    display: flex;
+    align-items: center;
+    gap: rem(24);
+
+    .company__avatar {
+        padding: rem(2);
+        border: rem(1) solid $red700;
+        border-radius: 100%;
+    }
+
+    .company__name {
+        font-weight: 600;
+        font-size: rem(24);
+        line-height: rem(37);
+        letter-spacing: rem(-0.2);
+        color: $black__text__color;
+    }
+}

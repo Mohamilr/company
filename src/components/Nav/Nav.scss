@@ -1,0 +1,7 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/colors";
+
+.nav {
+    padding: rem(9) 0 0 rem(53);
+    border: 0.7px solid $ash;
+}

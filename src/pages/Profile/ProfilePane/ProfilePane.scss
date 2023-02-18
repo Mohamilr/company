@@ -1,0 +1,15 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/colors";
+
+.profile__pane__container {
+    padding: rem(56) 0 0 rem(112);
+    border: rem(1) solid $light__ash;
+    border-radius: rem(8);
+
+    .company__profile {
+        margin-top: rem(48);
+        display: flex;
+        flex-direction: column;
+        gap: rem(24);
+    }
+}
