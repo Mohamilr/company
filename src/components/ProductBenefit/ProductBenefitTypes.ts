@@ -1,4 +1,4 @@
-import { ReactElement, FunctionComponent, SVGProps } from 'react';
+import { ReactElement,} from 'react';
 
 export interface ProductBenefitProps {
   icon: ReactElement;

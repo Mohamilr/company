@@ -1,0 +1,29 @@
+@import "../../../../assets/scss/mixins";
+@import "../../../../assets/scss/colors";
+
+.coming__soon__loader {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+
+    .loaders {
+        display: flex;
+        flex-direction: column;
+        gap: rem(4);
+
+        .loader {
+            background: $light__gray;
+            border-radius: rem(4);
+            height: rem(14);
+
+
+            &.--long {
+                width: rem(194);
+            }
+
+            &.--short {
+                width: rem(132);
+            }
+        }
+    }
+}

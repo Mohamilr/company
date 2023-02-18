@@ -1,0 +1,17 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/colors";
+
+.request__status {
+    font-size: rem(16);
+    line-height: rem(25);
+    letter-spacing: rem(-0.3);
+
+    &.--loading {
+        color: $black__text__color;
+    }
+
+    &.--error {
+        color: red;
+        cursor: pointer;
+    }
+}

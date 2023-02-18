@@ -1,6 +1,7 @@
 import React, { FC, FormEvent } from 'react';
 import Input from 'components/Input/Input';
 import Button from 'components/Button/Button';
+import { MoneeyIcon } from 'assets/svg';
 import './LoginForm.scss';
 
 const LoginForm: FC = () => {
@@ -10,6 +11,7 @@ const LoginForm: FC = () => {
   return (
     <>
       <div className="login__form__parent__container">
+        {/* <MoneeyIcon /> */}
         <div className="login__form__container">
           <h2 className="form__header">Login to your dashboard</h2>
           <p className="form__sub__header">

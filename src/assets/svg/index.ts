@@ -4,3 +4,7 @@ export { ReactComponent as EarningIcon } from './earnings.svg';
 export { ReactComponent as StaffsIcon } from './staffs.svg';
 export { ReactComponent as TickcircleIcon } from './tick_circle.svg';
 export { ReactComponent as EyeIcon } from './eye.svg';
+export { ReactComponent as PopIcon } from './pop.svg';
+export { ReactComponent as SparkIcon } from './spark.svg';
+export { ReactComponent as StarIcon } from './star.svg';
+export { ReactComponent as TimerIcon } from './timer.svg';

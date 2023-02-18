@@ -1,0 +1,60 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/colors";
+
+.coming__soon__container {
+    padding: rem(81) rem(24) rem(107);
+    background: $ash__background__color;
+    border-radius: rem(12);
+    width: rem(375);
+
+    .coming__soon__tag {
+        display: flex;
+        align-items: center;
+        gap: rem(4);
+        background: $pink;
+        border-radius: rem(30);
+        padding: rem(6) rem(16);
+        width: fit-content;
+
+        &.__text {
+            font-weight: 500;
+            font-size: rem(14);
+            line-height: rem(22);
+            letter-spacing: rem(-0.2);
+            color: $red;
+        }
+    }
+
+    .coming__soon__loaders {
+        padding: rem(20) rem(48) rem(20) rem(24);
+        border: rem(0.8) solid $gray;
+        border-radius: rem(10);
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+        background: $white;
+        margin-top: rem(56);
+    }
+
+    .notifications__container {
+        margin-top: rem(24);
+        text-align: center;
+
+        .notification__header {
+            font-weight: 600;
+            font-size: rem(24);
+            line-height: rem(37);
+            letter-spacing: rem(-0.2);
+            color: $black__text__color;
+        }
+
+        .notification__text {
+            font-size: rem(16);
+            line-height: rem(25);
+            text-align: center;
+            letter-spacing: rem(0.3);
+            color: $gray__text__color__a;
+            margin-top: rem(8);
+         }
+    }
+}
