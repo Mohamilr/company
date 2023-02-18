@@ -1,0 +1,17 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/colors";
+
+.button {
+    padding: rem(20);
+    text-align: center;
+    width: 100%;
+    background: $green;
+    border-radius: rem(40);
+    border: none;
+    font-weight: 500;
+    font-size: rem(16);
+    line-height: rem(25);
+    letter-spacing: rem(-0.3);
+    color: $white;
+    cursor: pointer;
+}

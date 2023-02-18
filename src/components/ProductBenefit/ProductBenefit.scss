@@ -1,0 +1,46 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/colors";
+
+.product__benefit {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+    width: fit-content;
+
+    &.--active {
+        background: #F8F8F6;
+        border-radius: rem(20);
+        padding: rem(10) rem(16) rem(10);
+    }
+
+    .product__benefit__info {
+        width: rem(297);
+
+        &__title {
+            font-weight: 500;
+            font-size: rem(16);
+            line-height: rem(25);
+            letter-spacing: rem(-0.3);
+            color: $gray__text__color__b;
+            margin: 0;
+
+            &.--active {
+                color: $black__text__color;
+            }
+          }
+      
+          &__content {
+            font-size: rem(12);
+            line-height: rem(19);
+            color: $gray__text__color__c;
+
+            &.--active {
+                color: $gray__text__color__d;
+            }
+          }
+    }
+
+    .tick__circle {
+        margin-left: rem(13);
+    }
+}

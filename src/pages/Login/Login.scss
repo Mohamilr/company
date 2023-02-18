@@ -1,0 +1,11 @@
+@import "../../assets/scss/breakpoints.scss";
+
+.login {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+
+    @media screen and (max-width: $medium-screen) {
+        display: flex;
+    }
+}

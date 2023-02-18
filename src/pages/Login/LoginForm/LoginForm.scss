@@ -1,0 +1,51 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/colors";
+@import "../../../assets/scss/breakpoints.scss";
+
+.login__form__parent__container {
+    background-color: $pink__background__color;
+    width: 100%;
+
+    .login__form__container {
+        margin: rem(143) rem(95) auto;
+        padding: rem(40) rem(64);
+        background-color: $white;
+        box-shadow: 0 rem(4) rem(25) rgba(102, 102, 102, 0.2);
+        border-radius: rem(12);
+
+        @media screen and (max-width: $medium-screen) {
+            margin: rem(100) rem(25) auto;
+            padding: rem(40) rem(64);
+        }
+
+        @media screen and (max-width: $xtra-small-screen) {
+            padding: rem(40) rem(24);
+        }
+
+        .form__header {
+            font-weight: 600;
+            font-size: rem(24);
+            line-height: rem(37);
+            letter-spacing: rem(-0.2);
+            color: $black__text__color;
+        }
+
+        .form__sub__header {
+            font-size: rem(16);
+            line-height: rem(25);
+            letter-spacing: rem(0.3);
+            color: $gray__text__color__b;
+        }
+
+        .form {
+            margin-top: rem(48);
+
+            &__inputs {
+                display: flex;
+                flex-direction: column;
+                gap: rem(26);
+                margin-bottom: rem(50);
+            }
+        }
+    }
+}

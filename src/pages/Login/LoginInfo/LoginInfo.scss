@@ -1,0 +1,41 @@
+@import "../../../assets/scss/mixins";
+@import "../../../assets/scss/colors";
+@import "../../../assets/scss/breakpoints.scss";
+
+.login__info__container {
+  padding: rem(44) rem(65);
+  width: 100%;
+
+  @media screen and (max-width: $medium-screen) {
+    display: none;
+  }
+
+  .info__container {
+    margin-top: rem(15);
+
+    .info__title {
+      font-weight: 700;
+      font-size: rem(32);
+      line-height: rem(48);
+      letter-spacing: rem(-0.5);
+      color: $black__text__color;
+      margin: 0;
+    }
+
+    .info__content {
+      font-size: rem(16);
+      line-height: rem(25);
+      letter-spacing: rem(0.3);
+      color: $gray__text__color__a;
+      margin: 0;
+    }
+  }
+
+  .product__benefit__list {
+    margin-top: rem(64);
+    padding-left: rem(15);
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+  }
+}

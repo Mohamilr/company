@@ -1,0 +1,46 @@
+@import "../../assets/scss/mixins";
+@import "../../assets/scss/colors";
+
+.input__group {
+    display: flex;
+    flex-direction: column;
+    gap: rem(6);
+
+    .input__label {
+        font-weight: 500;
+        font-size: rem(16);
+        line-height: rem(25);
+        letter-spacing: rem(-0.3);
+        color: $black__text__color;
+        display: contents;
+    }
+
+    .input__wrapper {
+        border: rem(1) solid $black__text__color;
+        border-radius: rem(8);
+        display: flex;
+        align-items: center;
+        gap: rem(5);
+        height: rem(77);
+        padding: rem(20);
+
+        &:focus-within {
+            outline: none;
+            box-shadow: rem(-1) rem(1) rem(7) rem(1) #f0f0f0;
+        }
+
+        .input {
+            width: 100%;
+            border: none;
+            font-size: rem(16);
+            line-height: rem(25);
+            letter-spacing: rem(0.3);
+            color: $black__text__color;
+    
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
