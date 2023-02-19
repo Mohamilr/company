@@ -1,7 +1,5 @@
 # company
 
-## Why Vite
-
 ## Installation
 
 - Clone the repo
@@ -21,6 +19,8 @@
 - Eslint
 
 ### Hosted url
+
+[https://company-profile-app.netlify.app/](https://company-profile-app.netlify.app/)
 
 #### Author
 
