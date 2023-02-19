@@ -22,6 +22,11 @@
 
 [https://company-profile-app.netlify.app/](https://company-profile-app.netlify.app/)
 
+### Default credentials
+
+Email: `elon@spacex.com`  
+Password: `elonspacex`
+
 #### Author
 
 Mohammed Ibrahim
