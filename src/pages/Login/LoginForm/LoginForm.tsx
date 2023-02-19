@@ -1,7 +1,7 @@
 import React, { FC, useContext } from 'react';
 import Input from 'components/Input/Input';
 import Button from 'components/Button/Button';
-import { MoneeyIcon } from 'assets/svg';
+import { MoneeyIcon2 } from 'assets/svg';
 import { AuthContext } from 'contex';
 import { useFormik } from 'formik';
 import { loginSchema } from 'utils/validations/login.validation';
@@ -35,7 +35,7 @@ const LoginForm: FC = () => {
   return (
     <>
       <div className="login__form__parent__container">
-        {/* <MoneeyIcon /> */}
+        <MoneeyIcon2 className="logo" />
         <div className="login__form__container">
           <h2 className="form__header">Login to your dashboard</h2>
           <p className="form__sub__header">
@@ -49,7 +49,7 @@ const LoginForm: FC = () => {
                 name="email"
                 id="email"
                 value={formik.values.email}
-                formik={formik}
+                error={formik?.errors['email']}
                 placeholder="Cokitchen222@gmail.co"
                 onChange={formik.handleChange}
               />
@@ -59,8 +59,8 @@ const LoginForm: FC = () => {
                 name="password"
                 id="password"
                 value={formik.values.password}
-                formik={formik}
-                placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
+                error={formik?.errors['password']}
+                placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
                 onChange={formik.handleChange}
                 hasIcon={true}
               />

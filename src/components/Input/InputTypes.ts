@@ -11,5 +11,5 @@ export interface InputProps {
   disabled?: boolean;
   hasIcon?: boolean;
   icon?: ReactElement;
-  formik?: any;
+  error?: string;
 }

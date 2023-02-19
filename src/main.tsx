@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
-import router from 'routes/Routes';
+import router from 'routes';
 import { ApolloProvider } from '@apollo/client';
 import client from 'graphql';
 import AuthContextProvider from 'contex';

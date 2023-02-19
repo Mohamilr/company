@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { useState, FC } from 'react';
 import { InputProps } from './InputTypes';
 import { EyeIcon } from 'assets/svg';
 import './Input.scss';
@@ -14,29 +14,34 @@ const Input: FC<InputProps> = ({
   disabled,
   hasIcon,
   icon,
-  formik,
-}) => (
-  <div className="input__group">
-    <label htmlFor="" className="input__label">
-      {label}
-    </label>
-    <div className="input__wrapper">
-      <input
-        type={type}
-        name={name}
-        id={id}
-        value={value}
-        className="input"
-        placeholder={placeholder}
-        onChange={onChange}
-        disabled={disabled}
-      />
-      {hasIcon && <>{icon ?? <EyeIcon />}</>}
+  error,
+}) => {
+  const [showPassword, togglePassword] = useState<boolean>(false);
+
+  const isPassword = type === 'password';
+  return (
+    <div className="input__group">
+      <label htmlFor="" className="input__label">
+        {label}
+      </label>
+      <div className="input__wrapper">
+        <input
+          type={isPassword && showPassword ? 'text' : type}
+          name={name}
+          id={id}
+          value={value}
+          className="input"
+          placeholder={placeholder}
+          onChange={onChange}
+          disabled={disabled}
+        />
+        {hasIcon && (
+          <>{icon ?? <EyeIcon onClick={() => togglePassword(!showPassword)} />}</>
+        )}
+      </div>
+      {error && <span className="input__error">{error}</span>}
     </div>
-    {formik && formik?.errors[name] && (
-      <span className="input__error">{formik?.errors[name]}</span>
-    )}
-  </div>
-);
+  );
+};
 
 export default Input;
