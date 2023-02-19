@@ -1,5 +1,6 @@
 @import "../../../../assets/scss/mixins";
 @import "../../../../assets/scss/colors";
+@import "../../../../assets/scss/breakpoints.scss";
 
 .coming__soon__loader {
     display: flex;
@@ -11,6 +12,10 @@
         flex-direction: column;
         gap: rem(4);
 
+        @media screen and (max-width: $medium-screen) {
+            width: 100%;
+        }
+
         .loader {
             background: $light__gray;
             border-radius: rem(4);
@@ -19,10 +24,18 @@
 
             &.--long {
                 width: rem(194);
+
+                @media screen and (max-width: $medium-screen) {
+                    width: 100%;
+                }
             }
 
             &.--short {
                 width: rem(132);
+
+                @media screen and (max-width: $medium-screen) {
+                    width: 70%;
+                }
             }
         }
     }

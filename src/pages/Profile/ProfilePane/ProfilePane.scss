@@ -1,10 +1,15 @@
 @import "../../../assets/scss/mixins";
 @import "../../../assets/scss/colors";
+@import "../../../assets/scss/breakpoints.scss";
 
 .profile__pane__container {
     padding: rem(56) 0 0 rem(112);
     border: rem(1) solid $light__ash;
     border-radius: rem(8);
+
+    @media screen and (max-width: $medium-screen) {
+        padding: rem(56);
+    }
 
     .company__profile {
         margin-top: rem(48);

@@ -5,6 +5,19 @@
 .login__form__parent__container {
     background-color: $pink__background__color;
     width: 100%;
+    
+    @media screen and (max-width: $medium-screen) {
+        padding-top: rem(20);
+    }
+
+    .logo {
+        display: none;
+
+        @media screen and (max-width: $medium-screen) {
+            display: block;
+            margin-left: rem(15);
+        }
+    }
 
     .login__form__container {
         margin: rem(143) rem(95) auto;
@@ -14,7 +27,7 @@
         border-radius: rem(12);
 
         @media screen and (max-width: $medium-screen) {
-            margin: rem(100) rem(25) auto;
+            margin: rem(70) rem(25) auto;
             padding: rem(40) rem(64);
         }
 

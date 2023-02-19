@@ -1,11 +1,16 @@
 @import "../../../assets/scss/mixins";
 @import "../../../assets/scss/colors";
+@import "../../../assets/scss/breakpoints.scss";
 
 .coming__soon__container {
     padding: rem(81) rem(24) rem(107);
     background: $ash__background__color;
     border-radius: rem(12);
     width: rem(375);
+
+    @media screen and (max-width: $medium-screen) {
+        width: 100%;
+    }
 
     .coming__soon__tag {
         display: flex;
