@@ -10,6 +10,10 @@
     display: none;
   }
 
+  & > svg {
+    margin-left: rem(-12);
+  }
+
   .info__container {
     margin-top: rem(15);
 
